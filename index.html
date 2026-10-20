@@ -131,7 +131,11 @@
   .svc p { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.6; }
   .svc .note { margin-top: 6px; font-size: 10px; }
 
-  .scenes { margin-top: 28px; display: grid; gap: 14px; }
+  .scenes { margin-top: 14px; display: grid; gap: 14px; }
+  .scene-group { margin-top: 28px; font-family: var(--sans); font-size: 12px; letter-spacing: .22em; color: var(--leaf); font-weight: 700; padding-bottom: 6px; border-bottom: 2px solid var(--leaf); }
+  .scene-group span { margin-left: 10px; letter-spacing: .08em; color: var(--green-dark); }
+  .scene-group + .scenes { margin-top: 14px; }
+  .scene-group:nth-of-type(2) { margin-top: 32px; }
   .scenes figcaption { top: 8px; bottom: auto; }
   .values figcaption { right: auto; left: 8px; }
   .problem figcaption { top: 59%; bottom: auto; }
@@ -203,7 +207,7 @@
   <section class="fv">
     <h1 class="sr">オフィス・クリニックのデザイン・設計・施工｜企業らしさと、働きやすさを、かたちに。</h1>
     <figure class="img-note">
-      <img src="images/lb-01.webp" alt="Libertad オフィスデザイン・設計・施工。企業らしさと、働きやすさを、かたちに。デザインから施工、移転・家具・グリーンまで。ひとつの窓口でご相談いただけます。初回相談無料。デザインから施工までワンストップ。" width="1024" height="1536">
+      <img src="images/lb-01.webp" alt="Libertad オフィス・クリニックのデザイン・設計・施工。企業らしさと、働きやすさを、かたちに。デザインから施工、移転・家具・グリーンまで。ひとつの窓口でまとめて対応します。初回相談・現地調査・お見積り無料。デザインから施工までワンストップ。" width="1024" height="1536">
     </figure>
   </section>
 
@@ -224,9 +228,9 @@
   </section>
 
   <section class="problem">
-    <h2 class="sr">オフィスづくりで、こんなお悩みはありませんか？</h2>
+    <h2 class="sr">オフィス・クリニックづくりで、こんなお悩みはありませんか？</h2>
     <figure class="img-note">
-      <img src="images/lb-02.webp" alt="オフィスづくりで、こんなお悩みはありませんか？ 希望のデザインが、予算内でできるか分からない。今の人数・働き方に合うレイアウトにしたい。移転・改装で業者がバラバラ、調整だけで手一杯。移転日までに、何をいつ決めればいいか分からない。" width="1024" height="1536" loading="lazy">
+      <img src="images/lb-02.webp" alt="オフィス・クリニックづくりで、こんなお悩みはありませんか？ 希望のデザインが、予算内でできるか分からない。今の人数・働き方に合うレイアウトにしたい。移転・改装で業者がバラバラ、調整だけで手一杯。開業・移転日までに、何をいつ決めればいいか分からない。" width="1024" height="1536" loading="lazy">
     </figure>
     <div class="inner">
       <div class="bridge">
@@ -239,8 +243,8 @@
   <section class="one">
     <div class="inner">
       <p class="en">ONE STOP</p>
-      <h2 class="h2">オフィスづくりの窓口を、<br>ひとつに。</h2>
-      <p class="lead">オフィスづくりには、デザイン・内装工事・家具・移転・IT環境など、多くの要素が関わります。</p>
+      <h2 class="h2">オフィス・クリニックづくりの<br>窓口を、ひとつに。</h2>
+      <p class="lead">オフィスやクリニックの空間づくりには、デザイン・内装工事・家具・移転・IT環境など、多くの要素が関わります。</p>
       <div class="compare">
         <div class="card">
           <p class="tag">業者ごとに個別手配すると</p>
@@ -312,10 +316,10 @@
   <section>
     <div class="inner">
       <p class="en">SERVICE</p>
-      <h2 class="h2">オフィスに必要なことを、<br>ひとつの窓口で。</h2>
+      <h2 class="h2">オフィス・クリニックに<br>必要なことを、ひとつの窓口で。</h2>
       <p class="lead">オフィス・クリニックの新設・移転・リニューアル。企業のニーズに合わせて、必要なサービスを組み合わせてご提案します。</p>
       <div class="svc-main">
-        <div class="bar"><small>01｜MAIN SERVICE</small><h3>オフィスデザイン・設計・内装施工</h3></div>
+        <div class="bar"><small>01｜MAIN SERVICE</small><h3>オフィス・クリニックのデザイン・設計・内装施工</h3></div>
         <ul>
           <li>オフィス・クリニックの新設・新装</li>
           <li>リニューアル・改装（部分改装も可）</li>
@@ -368,13 +372,19 @@
     <div class="inner">
       <p class="en">DESIGN IMAGE</p>
       <h2 class="h2">たとえば、こんな空間を。</h2>
-      <p class="lead">企業のブランド・働き方・ご予算に合わせて、一社ごとにプランをつくります。</p>
+      <p class="lead">企業・クリニックのブランド・働き方・ご予算に合わせて、一件ごとにプランをつくります。</p>
       <!-- CASE-SECTION-SLOT: 施工実績が出たら実事例に差し替え -->
+      <p class="scene-group">OFFICE<span>オフィス</span></p>
       <div class="scenes">
         <figure class="img-note"><img src="images/lb-07.webp" alt="SCENE 01 エントランス・受付。企業の第一印象をつくる場所に。" width="1536" height="1024" loading="lazy"></figure>
         <figure class="img-note"><img src="images/lb-08.webp" alt="SCENE 02 執務スペース。集中と会話を両立するレイアウトに。" width="1536" height="1024" loading="lazy"></figure>
         <figure class="img-note"><img src="images/lb-09.webp" alt="SCENE 03 会議室・応接室。商談の質を高める、落ち着いた空間に。" width="1536" height="1024" loading="lazy"></figure>
         <figure class="img-note"><img src="images/lb-10.webp" alt="SCENE 04 リフレッシュスペース。グリーンと花で、ほっとひと息を。" width="1536" height="1024" loading="lazy"></figure>
+      </div>
+      <p class="scene-group">CLINIC<span>クリニック</span></p>
+      <div class="scenes">
+        <figure class="img-note"><img src="images/lb-12.webp" alt="SCENE 05 クリニックの受付・待合室。患者さまが安心して過ごせる、明るく清潔な空間に。" width="1536" height="1024" loading="lazy"></figure>
+        <figure class="img-note"><img src="images/lb-13.webp" alt="SCENE 06 診察室・処置室。清潔感と落ち着きを両立した、使いやすい設計に。" width="1536" height="1024" loading="lazy"></figure>
       </div>
     </div>
   </section>
@@ -383,7 +393,7 @@
     <div class="inner">
       <p class="en">COST</p>
       <h2 class="h2">費用が変わる、<br>主なポイント。</h2>
-      <p class="lead">オフィスづくりの費用は、主に次の要素で変わります。</p>
+      <p class="lead">オフィス・クリニックづくりの費用は、主に次の要素で変わります。</p>
       <!-- PRICE-SECTION-SLOT: 料金の目安が確定したらここに掲載 -->
       <div class="cost-grid">
         <div><h4>広さ</h4><p>坪数・席数</p></div>
@@ -420,7 +430,7 @@
       <details><summary>初回相談は無料ですか？</summary><div class="a">はい、初回のご相談は無料です。</div></details>
       <details><summary>現地調査・お見積り・設計提案に費用はかかりますか？</summary><div class="a">かかりません。現地調査・お見積り・設計のご提案まで無料です。</div></details>
       <details><summary>お問い合わせ後、どのくらいで連絡がもらえますか？</summary><div class="a">お問い合わせから2営業日以内にご連絡します。</div></details>
-      <details><summary>オフィスのイメージが固まっていなくても相談できますか？</summary><div class="a">はい。デザインやレイアウトが決まっていない段階でもご相談いただけます。働き方やご予算、企業のイメージを伺いながら、方向性をご提案します。</div></details>
+      <details><summary>オフィスやクリニックのイメージが固まっていなくても相談できますか？</summary><div class="a">はい。デザインやレイアウトが決まっていない段階でもご相談いただけます。働き方やご予算、企業・医院のイメージを伺いながら、方向性をご提案します。</div></details>
       <details><summary>内装工事だけ、部分改装だけでも依頼できますか？</summary><div class="a">はい。内装工事のみ、部分改装のみのご依頼も承ります。なお、デザインのみのご依頼は承っておりません。</div></details>
       <details><summary>対応できる物件の種類・規模を教えてください。</summary><div class="a">オフィスとクリニックを対象としています。対応規模についてはご相談ください。</div></details>
       <details><summary>移転に必要なサービスをまとめて相談できますか？</summary><div class="a">はい。内装工事を中心に、家具・移転サポート・グリーン・IT・OA機器など、必要なサービスを組み合わせてまとめて対応します。</div></details>
@@ -433,7 +443,7 @@
   <section class="closing">
     <h2 class="sr">働く空間に、もっと自由を。</h2>
     <figure class="img-note">
-      <img src="images/lb-11.webp" alt="働く空間に、もっと自由を。オフィスの移転・改装・新設。まずは予算と進め方からご相談ください。" width="1024" height="1536" loading="lazy">
+      <img src="images/lb-11.webp" alt="働く空間に、もっと自由を。オフィス・クリニックの移転・改装・新設。まずは予算と進め方からご相談ください。" width="1024" height="1536" loading="lazy">
     </figure>
   </section>
   <div class="closing-cta">
@@ -469,7 +479,7 @@
 <script>
   const CONTACT_TO = "info@centerfield-inc.com";
   const mailto = (subject, body) => `mailto:${CONTACT_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  const consult = mailto("【Libertad】オフィスづくりの無料相談", "会社名：\r\nご担当者名：\r\n所在地：\r\n物件の種類（オフィス／クリニック）：\r\nおおよその坪数・人数：\r\nご希望の時期：\r\nご相談内容（新設／移転／改装／その他）：\r\n");
+  const consult = mailto("【Libertad】オフィス・クリニックづくりの無料相談", "会社名：\r\nご担当者名：\r\n所在地：\r\n物件の種類（オフィス／クリニック）：\r\nおおよその坪数・人数：\r\nご希望の時期：\r\nご相談内容（新設／移転／改装／その他）：\r\n");
   const partner = mailto("【Libertad】協業のご相談", "会社名：\r\nご担当者名：\r\nご相談内容：\r\n");
   document.querySelectorAll(".js-cta").forEach(a => a.href = consult);
   document.querySelectorAll(".js-cta-partner").forEach(a => a.href = partner);
