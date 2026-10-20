@@ -31,30 +31,30 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: var(--sans); color: var(--ink); background: #e6e4de; line-height: 1.8; font-size: 15px; -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--sans); color: var(--ink); background: #e6e4de; line-height: 1.7; font-size: 16px; -webkit-font-smoothing: antialiased; }
   img { display: block; width: 100%; height: auto; }
   a { color: inherit; }
   .page { max-width: 560px; margin: 0 auto; background: var(--paper); padding-bottom: 76px; box-shadow: 0 0 40px rgba(0,0,0,.06); }
-  .inner { padding: 0 22px; }
-  section { padding: 64px 0; }
-  .en { font-family: var(--sans); font-size: 12px; letter-spacing: .22em; color: var(--leaf); font-weight: 700; }
-  .h2 { font-family: var(--serif); font-weight: 600; font-size: 25px; line-height: 1.55; color: var(--green-dark); margin-top: 8px; letter-spacing: .02em; }
-  .lead { margin-top: 16px; color: var(--muted); font-size: 14px; }
-  .note { font-size: 11px; color: var(--muted); line-height: 1.6; }
+  .inner { padding: 0 18px; }
+  section { padding: 42px 0; }
+  .en { font-family: var(--sans); font-size: 13px; letter-spacing: .22em; color: var(--leaf); font-weight: 700; }
+  .h2 { font-family: var(--serif); font-weight: 600; font-size: 27px; line-height: 1.5; color: var(--green-dark); margin-top: 6px; letter-spacing: .02em; }
+  .lead { margin-top: 12px; color: var(--ink); font-size: 15px; }
+  .note { font-size: 12px; color: var(--muted); line-height: 1.6; }
   .img-note { position: relative; }
   .img-note figcaption { position: absolute; right: 8px; bottom: 8px; font-size: 10px; color: #fff; background: rgba(0,0,0,.42); padding: 2px 8px; border-radius: 2px; line-height: 1.6; }
 
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .problem { padding: 0 0 56px; }
+  .problem { padding: 0 0 40px; }
   .header { position: fixed; top: 0; left: 50%; width: 100%; max-width: 560px; transform: translate(-50%, -100%); transition: transform .25s; z-index: 20; display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; background: rgba(251,250,247,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
   .header.show { transform: translate(-50%, 0); }
   .header img { width: 120px; }
   .header a { font-size: 12px; font-weight: 700; text-decoration: none; color: #fff; background: var(--green); padding: 8px 14px; border-radius: 3px; }
 
-  .btn { display: block; text-align: center; text-decoration: none; background: var(--green); color: #fff; font-weight: 700; font-size: 16px; padding: 18px 16px; border-radius: 4px; box-shadow: 0 4px 0 var(--green-dark); letter-spacing: .04em; transition: transform .1s; }
+  .btn { display: block; text-align: center; text-decoration: none; background: var(--green); color: #fff; font-weight: 700; font-size: 17px; padding: 17px 16px; border-radius: 4px; box-shadow: 0 4px 0 var(--green-dark); letter-spacing: .04em; transition: transform .1s; }
   .btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--green-dark); }
   .btn .free { color: var(--yellow); }
-  .btn small { display: block; font-size: 11px; font-weight: 500; opacity: .85; margin-top: 2px; letter-spacing: .02em; }
+  .btn small { display: block; font-size: 12px; font-weight: 500; opacity: .85; margin-top: 2px; letter-spacing: .02em; }
   .btn-sub { display: block; text-align: center; margin-top: 12px; font-size: 13px; color: var(--muted); }
 
   .fv { position: relative; padding: 0; }
@@ -68,41 +68,73 @@
   .fv .img-note figcaption { bottom: 6px; }
 
   .first { background: var(--mist); }
-  .steps3 { margin-top: 26px; display: grid; gap: 12px; }
-  .steps3 li { list-style: none; display: grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: start; background: #fff; padding: 16px; border-left: 3px solid var(--green); }
-  .steps3 .num { font-family: var(--serif); font-size: 26px; color: var(--leaf); font-weight: 700; line-height: 1.2; }
-  .steps3 h3 { font-size: 16px; color: var(--green-dark); line-height: 1.5; }
-  .steps3 p { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.7; }
-  .freeline { margin-top: 24px; text-align: center; font-size: 14px; font-weight: 700; color: var(--green); line-height: 1.6; }
-  .freeline b { font-size: 17px; }
-  .ok { margin: 26px 0 14px; text-align: center; font-family: var(--serif); font-weight: 600; color: var(--green-dark); font-size: 17px; }
-  .freeline + .ok { margin-top: 6px; }
-  .mailhint { margin-top: 18px; border: 1px dashed #b8c4b5; padding: 14px 16px; font-size: 12px; color: var(--muted); background: rgba(255,255,255,.6); }
+  .steps3 { margin-top: 18px; display: grid; gap: 10px; }
+  .steps3 li { list-style: none; display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; background: #fff; padding: 14px; border-left: 3px solid var(--green); }
+  .steps3 .num { font-family: var(--serif); font-size: 27px; color: var(--leaf); font-weight: 700; line-height: 1.2; }
+  .steps3 h3 { font-size: 17px; color: var(--green-dark); line-height: 1.5; }
+  .steps3 p { font-size: 14.5px; color: var(--ink); margin-top: 3px; line-height: 1.65; }
+  .freeline { margin-top: 18px; text-align: center; font-size: 16px; font-weight: 700; color: var(--green); line-height: 1.6; }
+  .freeline b { font-size: 20px; }
+  .ok { margin: 18px 0 10px; text-align: center; font-family: var(--serif); font-weight: 600; color: var(--green-dark); font-size: 18px; }
+  .freeline + .ok { margin-top: 4px; }
+  .mailhint { margin-top: 12px; border: 1px dashed #b8c4b5; padding: 12px 14px; font-size: 13.5px; color: var(--ink); background: rgba(255,255,255,.6); line-height: 1.65; }
   .mailhint b { color: var(--ink); }
 
   .problem-list { margin-top: 22px; display: grid; gap: 10px; }
   .problem-list li { list-style: none; position: relative; padding: 13px 14px 13px 44px; background: var(--stone); font-weight: 500; font-size: 15px; line-height: 1.6; }
   .problem-list li::before { content: ""; position: absolute; left: 14px; top: 15px; width: 18px; height: 18px; border: 2px solid var(--green); border-radius: 2px; background: #fff; }
   .problem-list li::after { content: ""; position: absolute; left: 19px; top: 17px; width: 6px; height: 11px; border: solid var(--green); border-width: 0 3px 3px 0; transform: rotate(45deg); }
-  .bridge { margin-top: 26px; text-align: center; }
-  .bridge .arrow { width: 0; height: 0; margin: 0 auto 16px; border-left: 22px solid transparent; border-right: 22px solid transparent; border-top: 16px solid var(--leaf); }
-  .bridge p { font-family: var(--serif); font-weight: 700; font-size: 20px; color: var(--green-dark); line-height: 1.6; }
+  .bridge { margin-top: 18px; text-align: center; }
+  .bridge .arrow { width: 0; height: 0; margin: 0 auto 10px; border-left: 22px solid transparent; border-right: 22px solid transparent; border-top: 16px solid var(--leaf); }
+  .bridge p { font-family: var(--serif); font-weight: 700; font-size: 22px; color: var(--green-dark); line-height: 1.6; }
   .bridge p span { background: linear-gradient(transparent 62%, rgba(224,208,0,.45) 62%); }
 
   .one { background: var(--green-dark); color: #fff; }
   .one .h2 { color: #fff; }
   .one .en { color: var(--yellow); }
-  .one .lead { color: rgba(255,255,255,.8); }
-  .compare { margin-top: 28px; display: grid; gap: 14px; }
-  .compare .card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.18); padding: 18px 16px; }
+  .one .lead { color: rgba(255,255,255,.9); }
+  .compare { margin-top: 18px; display: grid; gap: 12px; }
+  .compare .card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.18); padding: 14px 14px; }
   .compare .card.after { background: #fff; color: var(--ink); border: none; }
-  .compare .tag { font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+  .compare .tag { font-size: 14px; font-weight: 700; letter-spacing: .06em; }
   .compare .card.after .tag { color: var(--green); }
-  .compare svg { width: 100%; height: auto; margin-top: 8px; }
-  .compare p { font-size: 13px; margin-top: 8px; line-height: 1.7; }
-  .compare .card:not(.after) p { color: rgba(255,255,255,.82); }
+  .compare svg { width: 100%; height: auto; margin-top: 6px; }
+  .compare p { font-size: 14.5px; margin-top: 6px; line-height: 1.65; }
+  .compare .card:not(.after) p { color: rgba(255,255,255,.9); }
+  .dg .nd, .dg .me, .dg .hub { transform-box: fill-box; transform-origin: center; }
+  .dg-before .ln path { stroke-dashoffset: 0; }
+  .on .dg-before .ln path { animation: march 1.1s linear infinite; }
+  .on .dg-before .ln path:nth-child(even) { animation-direction: reverse; }
+  .on .dg-before .nd { animation: jitter 2.6s ease-in-out infinite; }
+  .on .dg-before .nd:nth-child(2) { animation-delay: .4s; } .on .dg-before .nd:nth-child(3) { animation-delay: .9s; }
+  .on .dg-before .nd:nth-child(4) { animation-delay: 1.3s; } .on .dg-before .nd:nth-child(5) { animation-delay: .6s; } .on .dg-before .nd:nth-child(6) { animation-delay: 1.8s; }
+  .on .dg-before .me { animation: wobble 1.8s ease-in-out infinite; }
+  .dg-after .ln2 path { stroke-dasharray: 200; stroke-dashoffset: 200; }
+  .on .dg-after .ln2 path { animation: draw .55s ease-out forwards; }
+  .on .dg-after .l0 { animation-delay: .15s; }
+  .on .dg-after .l1 { animation-delay: .95s; } .on .dg-after .l2 { animation-delay: 1.07s; } .on .dg-after .l3 { animation-delay: 1.19s; }
+  .on .dg-after .l4 { animation-delay: 1.31s; } .on .dg-after .l5 { animation-delay: 1.43s; } .on .dg-after .l6 { animation-delay: 1.55s; }
+  .dg-after .hub { transform: scale(.6); opacity: 0; transition: transform .55s cubic-bezier(.2,1.5,.4,1) .55s, opacity .3s .55s; }
+  .on .dg-after .hub { transform: scale(1); opacity: 1; }
+  .dg-after .nd { opacity: 0; transform: translateX(14px); transition: opacity .35s, transform .35s; }
+  .on .dg-after .nd { opacity: 1; transform: translateX(0); }
+  .on .dg-after .nd:nth-child(1) { transition-delay: 1.15s; } .on .dg-after .nd:nth-child(2) { transition-delay: 1.27s; } .on .dg-after .nd:nth-child(3) { transition-delay: 1.39s; }
+  .on .dg-after .nd:nth-child(4) { transition-delay: 1.51s; } .on .dg-after .nd:nth-child(5) { transition-delay: 1.63s; } .on .dg-after .nd:nth-child(6) { transition-delay: 1.75s; }
+  .dg-after .sig path { stroke-dasharray: 12 400; stroke-dashoffset: 412; opacity: 0; }
+  .on .dg-after .sig path { opacity: 1; animation: travel 2.2s linear infinite; }
+  .on .dg-after .s0 { animation-delay: 2.2s; } .on .dg-after .s1 { animation-delay: 2.5s; } .on .dg-after .s2 { animation-delay: 2.6s; } .on .dg-after .s3 { animation-delay: 2.7s; }
+  .on .dg-after .s4 { animation-delay: 2.8s; } .on .dg-after .s5 { animation-delay: 2.9s; } .on .dg-after .s6 { animation-delay: 3.0s; }
+  @keyframes march { to { stroke-dashoffset: -20; } }
+  @keyframes jitter { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(1.6px, -1.2px); } 50% { transform: translate(-1.2px, 1.4px); } 75% { transform: translate(1px, 1px); } }
+  @keyframes wobble { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.07); } }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes travel { from { stroke-dashoffset: 412; } to { stroke-dashoffset: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .dg * { animation: none !important; transition: none !important; }
+    .dg-after .ln2 path { stroke-dashoffset: 0; } .dg-after .hub, .dg-after .nd { opacity: 1; transform: none; } .dg-after .sig { display: none; }
+  }
 
-  .values { display: grid; gap: 16px; margin-top: 28px; }
+  .values { display: grid; gap: 12px; margin-top: 18px; }
   .value .head { display: flex; align-items: baseline; gap: 12px; margin-top: 18px; }
   .value .no { font-family: var(--serif); font-size: 40px; color: var(--leaf); line-height: 1; font-weight: 700; }
   .value .head .en { color: var(--muted); }
@@ -111,31 +143,31 @@
   .bubble::before { content: ""; position: absolute; left: 22px; top: -8px; border: 8px solid transparent; border-bottom-color: var(--stone); border-top: 0; }
   .value p { margin-top: 12px; font-size: 14px; }
 
-  .cta-mid { padding: 40px 0; background: var(--stone); }
-  .cta-mid .q { text-align: center; font-family: var(--serif); font-weight: 600; color: var(--green-dark); margin-bottom: 14px; font-size: 16px; }
+  .cta-mid { padding: 28px 0; background: var(--stone); }
+  .cta-mid .q { text-align: center; font-family: var(--serif); font-weight: 600; color: var(--green-dark); margin-bottom: 12px; font-size: 18px; }
 
-  .svc-main { margin-top: 28px; border: 2px solid var(--green); background: #fff; }
-  .svc-main .bar { background: var(--green); color: #fff; padding: 12px 16px; }
-  .svc-main .bar small { display: block; font-size: 10px; letter-spacing: .14em; color: var(--yellow); }
-  .svc-main .bar h3 { font-size: 17px; line-height: 1.5; }
-  .svc-main ul { padding: 14px 16px 6px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; }
-  .svc-main li { list-style: none; font-size: 13px; padding-left: 14px; position: relative; line-height: 1.6; }
+  .svc-main { margin-top: 18px; border: 2px solid var(--green); background: #fff; }
+  .svc-main .bar { background: var(--green); color: #fff; padding: 10px 14px; }
+  .svc-main .bar small { display: block; font-size: 11px; letter-spacing: .14em; color: var(--yellow); }
+  .svc-main .bar h3 { font-size: 18px; line-height: 1.45; }
+  .svc-main ul { padding: 12px 14px 4px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px 10px; }
+  .svc-main li { list-style: none; font-size: 14px; padding-left: 13px; position: relative; line-height: 1.55; }
   .svc-main li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; background: var(--leaf); }
-  .svc-main p { padding: 4px 16px 16px; font-size: 12px; color: var(--muted); }
-  .svc-main p.note { padding-top: 0; margin-top: -8px; }
-  .svc-grid { margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .svc { background: #fff; border: 1px solid var(--line); padding: 14px 12px; }
-  .svc svg { width: 30px; height: 30px; stroke: var(--green); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-  .svc .n { font-family: var(--serif); font-size: 12px; color: var(--leaf); font-weight: 700; margin-top: 4px; }
-  .svc h4 { font-size: 14px; line-height: 1.45; color: var(--green-dark); }
-  .svc p { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.6; }
-  .svc .note { margin-top: 6px; font-size: 10px; }
+  .svc-main p { padding: 4px 14px 14px; font-size: 14px; color: var(--ink); line-height: 1.65; }
+  .svc-main p.note { padding-top: 0; margin-top: -8px; font-size: 12.5px; color: var(--muted); }
+  .svc-grid { margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .svc { background: #fff; border: 1px solid var(--line); padding: 12px 11px; }
+  .svc svg { width: 28px; height: 28px; stroke: var(--green); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .svc .n { font-family: var(--serif); font-size: 13px; color: var(--leaf); font-weight: 700; margin-top: 2px; }
+  .svc h4 { font-size: 15px; line-height: 1.4; color: var(--green-dark); }
+  .svc p { font-size: 13.5px; color: var(--ink); margin-top: 5px; line-height: 1.55; }
+  .svc .note { margin-top: 5px; font-size: 11.5px; color: var(--muted); }
 
-  .scenes { margin-top: 14px; display: grid; gap: 14px; }
-  .scene-group { margin-top: 28px; font-family: var(--sans); font-size: 12px; letter-spacing: .22em; color: var(--leaf); font-weight: 700; padding-bottom: 6px; border-bottom: 2px solid var(--leaf); }
+  .scenes { margin-top: 12px; display: grid; gap: 10px; }
+  .scene-group { margin-top: 20px; font-family: var(--sans); font-size: 14px; letter-spacing: .22em; color: var(--leaf); font-weight: 700; padding-bottom: 6px; border-bottom: 2px solid var(--leaf); }
   .scene-group span { margin-left: 10px; letter-spacing: .08em; color: var(--green-dark); }
-  .scene-group + .scenes { margin-top: 14px; }
-  .scene-group:nth-of-type(2) { margin-top: 32px; }
+  .scene-group + .scenes { margin-top: 10px; }
+  .scene-group:nth-of-type(2) { margin-top: 24px; }
   .scenes figcaption { top: 8px; bottom: auto; }
   .values figcaption { right: auto; left: 8px; }
   .problem figcaption { top: 59%; bottom: auto; }
@@ -143,53 +175,55 @@
   .scene p { font-size: 13px; color: var(--muted); margin-top: 2px; }
 
   .cost { background: var(--mist); }
-  .cost-grid { margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .cost-grid div { background: #fff; padding: 14px; }
-  .cost-grid h4 { font-size: 14px; color: var(--green-dark); }
-  .cost-grid p { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.6; }
-  .cost .bridge p { font-size: 18px; }
+  .cost-grid { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .cost-grid div { background: #fff; padding: 12px; }
+  .cost-grid h4 { font-size: 16px; color: var(--green-dark); }
+  .cost-grid p { font-size: 13.5px; color: var(--ink); margin-top: 3px; line-height: 1.55; }
+  .cost .bridge p { font-size: 20px; }
 
-  .flow { margin-top: 28px; }
-  .flow li { list-style: none; position: relative; padding: 0 0 26px 58px; }
+  .flow { margin-top: 18px; }
+  .flow li { list-style: none; position: relative; padding: 0 0 16px 56px; }
   .flow li::before { content: ""; position: absolute; left: 21px; top: 44px; bottom: 4px; width: 2px; background: var(--line); }
   .flow li:last-child::before { display: none; }
   .flow .st { position: absolute; left: 0; top: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; font-family: var(--serif); font-weight: 700; font-size: 15px; line-height: 1; }
   .flow .st small { display: block; font-size: 8px; letter-spacing: .06em; font-family: var(--sans); }
-  .flow h3 { font-size: 16px; color: var(--green-dark); line-height: 1.5; padding-top: 2px; }
-  .flow p { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .flow h3 { font-size: 17px; color: var(--green-dark); line-height: 1.5; padding-top: 2px; }
+  .flow p { font-size: 14.5px; color: var(--ink); margin-top: 3px; line-height: 1.65; }
 
   .faq { background: var(--stone); }
-  .faq details { background: #fff; margin-top: 10px; }
-  .faq details:first-of-type { margin-top: 26px; }
-  .faq summary { list-style: none; cursor: pointer; padding: 15px 44px 15px 46px; position: relative; font-weight: 700; font-size: 14px; line-height: 1.6; color: var(--green-dark); }
+  .faq details { background: #fff; margin-top: 8px; }
+  .faq details:first-of-type { margin-top: 16px; }
+  .faq summary { list-style: none; cursor: pointer; padding: 13px 40px 13px 44px; position: relative; font-weight: 700; font-size: 15.5px; line-height: 1.55; color: var(--green-dark); }
   .faq summary::-webkit-details-marker { display: none; }
-  .faq summary::before { content: "Q"; position: absolute; left: 16px; top: 13px; font-family: var(--serif); font-size: 18px; color: var(--leaf); }
-  .faq summary::after { content: "+"; position: absolute; right: 16px; top: 12px; font-size: 20px; color: var(--green); font-weight: 400; }
+  .faq summary::before { content: "Q"; position: absolute; left: 14px; top: 11px; font-family: var(--serif); font-size: 18px; color: var(--leaf); }
+  .faq summary::after { content: "+"; position: absolute; right: 14px; top: 10px; font-size: 20px; color: var(--green); font-weight: 400; }
   .faq details[open] summary::after { content: "−"; }
-  .faq .a { padding: 0 16px 16px 46px; font-size: 13px; color: var(--ink); position: relative; }
-  .faq .a::before { content: "A"; position: absolute; left: 16px; top: -3px; font-family: var(--serif); font-size: 18px; color: var(--green); }
+  .faq .a { padding: 0 14px 14px 44px; font-size: 14.5px; color: var(--ink); position: relative; line-height: 1.65; }
+  .faq .a::before { content: "A"; position: absolute; left: 14px; top: -3px; font-family: var(--serif); font-size: 18px; color: var(--green); }
 
   .closing { position: relative; padding: 0; }
   .closing-copy { position: absolute; inset: 0 0 auto 0; padding: 40px 22px 0; text-align: center; }
   .closing-copy h2 { font-family: var(--serif); font-weight: 700; color: var(--green-dark); font-size: 28px; line-height: 1.5; text-shadow: 0 0 16px rgba(255,255,255,.95); }
   .closing-copy p { margin-top: 12px; font-size: 14px; font-weight: 500; text-shadow: 0 0 10px #fff, 0 0 3px #fff; }
-  .closing-cta { padding: 28px 22px 48px; }
+  .closing-cta { padding: 18px 18px 26px; }
 
-  .partner { padding: 36px 0; border-top: 1px solid var(--line); }
-  .partner h3 { font-size: 15px; color: var(--green-dark); }
-  .partner p { font-size: 13px; color: var(--muted); margin-top: 6px; }
-  .partner a { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 700; color: var(--green); }
+  .partner { padding: 24px 0; border-top: 1px solid var(--line); }
+  .partner h3 { font-size: 17px; color: var(--green-dark); }
+  .partner p { font-size: 14.5px; color: var(--ink); margin-top: 5px; }
+  .partner a { display: inline-block; margin-top: 8px; font-size: 15px; font-weight: 700; color: var(--green); }
 
-  .footer { background: var(--green-dark); color: rgba(255,255,255,.85); text-align: center; padding: 40px 22px 30px; font-size: 12px; }
-  .footer .logo-box { background: #fff; display: inline-block; padding: 14px 20px; border-radius: 3px; }
-  .footer .logo-box img { width: 200px; }
-  .footer .tagline { font-family: var(--serif); margin-top: 16px; font-size: 15px; color: #fff; }
-  .footer dl { margin-top: 18px; line-height: 1.9; }
-  .footer .note { color: rgba(255,255,255,.65); margin-top: 14px; }
-  .footer .copy { margin-top: 18px; font-size: 10px; letter-spacing: .08em; color: rgba(255,255,255,.55); }
+  .footer { background: var(--green-dark); color: rgba(255,255,255,.9); text-align: center; padding: 0 18px 24px; font-size: 13.5px; }
+  .footer .logo-box { background: #fff; display: block; margin: 0 -18px; padding: 20px 28px; }
+  .footer .logo-box img { width: 100%; max-width: 440px; margin: 0 auto; }
+  .footer .tagline { font-family: var(--serif); margin-top: 18px; font-size: 17px; color: #fff; }
+  .footer dl { margin-top: 12px; line-height: 1.8; }
+  .footer dt { font-size: 12px; color: rgba(255,255,255,.65); margin-top: 6px; }
+  .footer dd { font-size: 14px; color: #fff; }
+  .footer .note { color: rgba(255,255,255,.7); margin-top: 14px; font-size: 12px; }
+  .footer .copy { margin-top: 14px; font-size: 11px; letter-spacing: .08em; color: rgba(255,255,255,.6); }
 
   .sticky { position: fixed; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; max-width: 560px; z-index: 30; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(251,250,247,.95); border-top: 1px solid var(--line); }
-  .sticky .btn { padding: 13px 10px; font-size: 15px; }
+  .sticky .btn { padding: 13px 10px; font-size: 16px; }
 
   @media (min-width: 561px) {
     .fv h1 { font-size: 34px; }
@@ -248,45 +282,39 @@
       <div class="compare">
         <div class="card">
           <p class="tag">業者ごとに個別手配すると</p>
-          <svg viewBox="0 0 480 230" role="img" aria-label="ご担当者さまが6つの業者とそれぞれ調整する図">
-            <g stroke="rgba(255,255,255,.55)" stroke-width="1.5" stroke-dasharray="5 5" fill="none">
+          <svg class="dg dg-before" viewBox="0 0 480 230" role="img" aria-label="ご担当者さまが6つの業者とそれぞれ調整する図">
+            <g class="ln" stroke="rgba(255,255,255,.55)" stroke-width="1.5" stroke-dasharray="5 5" fill="none">
               <path d="M240 115 L70 40"/><path d="M240 115 L240 30"/><path d="M240 115 L410 40"/>
               <path d="M240 115 L70 190"/><path d="M240 115 L240 200"/><path d="M240 115 L410 190"/>
               <path d="M70 40 L410 190"/><path d="M410 40 L70 190"/>
             </g>
             <g font-size="15" font-weight="700" text-anchor="middle" fill="#fff">
-              <rect x="20" y="22" width="100" height="36" rx="3" fill="#2a6440"/><text x="70" y="46">デザイン</text>
-              <rect x="190" y="12" width="100" height="36" rx="3" fill="#2a6440"/><text x="240" y="36">内装工事</text>
-              <rect x="360" y="22" width="100" height="36" rx="3" fill="#2a6440"/><text x="410" y="46">家具</text>
-              <rect x="20" y="172" width="100" height="36" rx="3" fill="#2a6440"/><text x="70" y="196">移転</text>
-              <rect x="190" y="182" width="100" height="36" rx="3" fill="#2a6440"/><text x="240" y="206">IT・OA</text>
-              <rect x="360" y="172" width="100" height="36" rx="3" fill="#2a6440"/><text x="410" y="196">グリーン</text>
-              <circle cx="240" cy="115" r="34" fill="#f1efea"/><text x="240" y="120" fill="#1f2a24" font-size="13">ご担当者</text>
+              <g class="nd"><rect x="20" y="22" width="100" height="36" rx="3" fill="#2a6440"/><text x="70" y="46">デザイン</text></g>
+              <g class="nd"><rect x="190" y="12" width="100" height="36" rx="3" fill="#2a6440"/><text x="240" y="36">内装工事</text></g>
+              <g class="nd"><rect x="360" y="22" width="100" height="36" rx="3" fill="#2a6440"/><text x="410" y="46">家具</text></g>
+              <g class="nd"><rect x="20" y="172" width="100" height="36" rx="3" fill="#2a6440"/><text x="70" y="196">移転</text></g>
+              <g class="nd"><rect x="190" y="182" width="100" height="36" rx="3" fill="#2a6440"/><text x="240" y="206">IT・OA</text></g>
+              <g class="nd"><rect x="360" y="172" width="100" height="36" rx="3" fill="#2a6440"/><text x="410" y="196">グリーン</text></g>
+              <g class="me"><circle cx="240" cy="115" r="34" fill="#f1efea"/><text x="240" y="120" fill="#1f2a24" font-size="13">ご担当者</text></g>
             </g>
           </svg>
           <p>見積り・日程・仕様のすり合わせを、業者ごとに行う必要があります。</p>
         </div>
         <div class="card after">
           <p class="tag">Libertadにまとめて相談すると</p>
-          <svg viewBox="0 0 480 230" role="img" aria-label="ご担当者さまはLibertadとだけやりとりし、Libertadが6つのサービスを連携させる図">
-            <g stroke="#80b018" stroke-width="2" fill="none">
-              <path d="M96 115 L170 115"/>
-              <path d="M290 115 L350 26"/><path d="M290 115 L350 62"/><path d="M290 115 L350 98"/>
-              <path d="M290 115 L350 134"/><path d="M290 115 L350 170"/><path d="M290 115 L350 206"/>
-            </g>
-            <circle cx="60" cy="115" r="36" fill="#f1efea"/>
-            <g font-size="12" font-weight="700" text-anchor="middle" fill="#1f2a24"><text x="60" y="120" font-size="13">ご担当者</text></g>
-            <rect x="170" y="70" width="120" height="90" rx="4" fill="#fff" stroke="#006828" stroke-width="2"/>
-            <image href="images/mark.png" x="200" y="78" width="60" height="44"/>
-            <text x="230" y="146" text-anchor="middle" font-size="15" font-weight="700" fill="#006828">Libertad</text>
+          <svg class="dg dg-after" viewBox="0 0 480 230" role="img" aria-label="ご担当者さまはLibertadとだけやりとりし、Libertadが6つのサービスを連携させる図">
+            <g class="ln2" stroke="#80b018" stroke-width="2" fill="none" stroke-linecap="round"><path class="l0" d="M96 115 L170 115"/><path class="l1" d="M290 115 L350 26"/><path class="l2" d="M290 115 L350 62"/><path class="l3" d="M290 115 L350 98"/><path class="l4" d="M290 115 L350 134"/><path class="l5" d="M290 115 L350 170"/><path class="l6" d="M290 115 L350 206"/></g>
+            <g class="sig" stroke="#e0d000" stroke-width="3" fill="none" stroke-linecap="round"><path class="s0" d="M96 115 L170 115"/><path class="s1" d="M290 115 L350 26"/><path class="s2" d="M290 115 L350 62"/><path class="s3" d="M290 115 L350 98"/><path class="s4" d="M290 115 L350 134"/><path class="s5" d="M290 115 L350 170"/><path class="s6" d="M290 115 L350 206"/></g>
+            <g class="me"><circle cx="60" cy="115" r="36" fill="#f1efea"/><text x="60" y="120" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2a24">ご担当者</text></g>
+            <g class="hub"><rect x="170" y="70" width="120" height="90" rx="4" fill="#fff" stroke="#006828" stroke-width="2"/><image href="images/mark.png" x="200" y="78" width="60" height="44"/><text x="230" y="146" text-anchor="middle" font-size="15" font-weight="700" fill="#006828">Libertad</text></g>
             <g font-size="14" font-weight="700" fill="#004a1c">
-              <rect x="350" y="12" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="31" text-anchor="middle">デザイン</text>
-              <rect x="350" y="48" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="67" text-anchor="middle">内装工事</text>
-              <rect x="350" y="84" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="103" text-anchor="middle">家具</text>
-              <rect x="350" y="120" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="139" text-anchor="middle">移転</text>
-              <rect x="350" y="156" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="175" text-anchor="middle">IT・OA</text>
-              <rect x="350" y="192" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="211" text-anchor="middle">グリーン</text>
-            </g>
+              <g class="nd"><rect x="350" y="12" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="31" text-anchor="middle">デザイン</text></g>
+              <g class="nd"><rect x="350" y="48" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="67" text-anchor="middle">内装工事</text></g>
+              <g class="nd"><rect x="350" y="84" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="103" text-anchor="middle">家具</text></g>
+              <g class="nd"><rect x="350" y="120" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="139" text-anchor="middle">移転</text></g>
+              <g class="nd"><rect x="350" y="156" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="175" text-anchor="middle">IT・OA</text></g>
+              <g class="nd"><rect x="350" y="192" width="118" height="28" rx="3" fill="#eef3ec"/><text x="409" y="211" text-anchor="middle">グリーン</text></g>
+              </g>
           </svg>
           <p>ご相談の窓口をまとめ、工程や予算、各サービスのつながりを考えてまとめて対応します。複数業者との調整にかかる手間を抑えられます。</p>
         </div>
@@ -483,6 +511,8 @@
   const partner = mailto("【Libertad】協業のご相談", "会社名：\r\nご担当者名：\r\nご相談内容：\r\n");
   document.querySelectorAll(".js-cta").forEach(a => a.href = consult);
   document.querySelectorAll(".js-cta-partner").forEach(a => a.href = partner);
+  const cmp = document.querySelector(".compare");
+  if (cmp) new IntersectionObserver((es, ob) => { if (es[0].isIntersecting) { cmp.classList.add("on"); ob.disconnect(); } }, { threshold: .3 }).observe(cmp);
   const header = document.querySelector(".header");
   const fv = document.querySelector(".fv");
   new IntersectionObserver(([e]) => header.classList.toggle("show", !e.isIntersecting)).observe(fv);
